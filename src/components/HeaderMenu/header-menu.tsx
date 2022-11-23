@@ -12,8 +12,8 @@ export const HeaderMenu = () => {
       <div className="header-menu__item">
         <img src={iArrow} alt="" className="header-menu__img" />
       </div>
-      <div className="header-menu__item"></div>
-      <div className="header-menu__item"></div>
+      <div className="header-menu__item">Просмотр</div>
+      <div className="header-menu__item">Управление</div>
     </div>
   );
 };

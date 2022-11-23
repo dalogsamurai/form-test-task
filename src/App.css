@@ -1,5 +1,9 @@
 .App {
   background-color: #202124;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .App-logo {
