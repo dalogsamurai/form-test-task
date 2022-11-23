@@ -1,4 +1,4 @@
-import iArrow from "../../assets/arrow.svg";
+import iArrowMenu from "../../assets/arrow-menu.svg";
 import iMenu from "../../assets/menu.svg";
 import "./header-menu.sass";
 
@@ -10,7 +10,7 @@ export const HeaderMenu = () => {
         <img src={iMenu} alt="" className="header-menu__img" />
       </div>
       <div className="header-menu__item">
-        <img src={iArrow} alt="" className="header-menu__img" />
+        <img src={iArrowMenu} alt="" className="header-menu__img" />
       </div>
       <div className="header-menu__item">Просмотр</div>
       <div className="header-menu__item">Управление</div>
