@@ -1,4 +1,3 @@
-import { Folder } from "../components/Folder/folder";
 import { HeaderMenu } from "../components/HeaderMenu";
 import { Menu } from "../components/Menu/menu";
 import "./main.page.sass";
