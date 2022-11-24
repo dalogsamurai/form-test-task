@@ -1,3 +1,4 @@
+import { Folder } from "../Folder/folder";
 import { FolderTitle } from "../FolderTitle/folder-title";
 import { MenuItemList } from "../MenuItemList/menu-item-list";
 import { UpperSection } from "../UpperSection/upper-section";
@@ -10,8 +11,9 @@ export const Menu = () => {
         <UpperSection />
         <FolderTitle />
       </div>
-      <div className="menu__list">
+      <div className="menu__content">
         <MenuItemList />
+        <Folder />
       </div>
     </div>
   );
