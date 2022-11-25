@@ -1,6 +1,29 @@
+import { useEffect, useState } from "react";
 import "./folder.sass";
 
 export const Folder = () => {
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch("http://185.244.172.108:8081/v1/outlay-rows/entity/create")
+      // fetch("http://185.244.172.108:8081/v1/outlay-rows/entity/{eID}/row/list")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setItems(result);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, []);
+
+  console.log(items);
+
   return (
     <div className="folder">
       <div className="folder__row">
